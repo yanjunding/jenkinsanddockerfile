@@ -8,6 +8,7 @@ node {
         // Checkout the code from source control.
         checkout scm
         // Clone all submodules.
+        sh "echo hello"
         sh "git submodule update --init --recursive"
     }
 
