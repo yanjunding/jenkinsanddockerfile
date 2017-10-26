@@ -36,6 +36,8 @@ ARG PYTHON_VERSION=3.5
 RUN conda install -q python=${PYTHON_VERSION}
 
 COPY . .
-
+RUN echo 'start'
+RUN cat README.md
+RUN echo 'END'
 # Print the last commit message in this repository.
 RUN git log -1
