@@ -25,7 +25,7 @@ node {
        Note that we assign the result to the variable ci_environment. */
     def ci_environment = docker.build(
         ci_image_name,
-        "-f Dockerfile.simple " +
+        "-f Dockerfile " +
         "--build-arg PYTHON_VERSION=${pythonVersion} " + ".")
 
     /* With the variable ci_environment, we can use ci_environment.inside
