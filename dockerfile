@@ -1,6 +1,7 @@
 FROM ubuntu:16.04
 LABEL maintainer="nfliu@cs.washington.edu"
 
+
 # Install some basic packages.
 RUN apt-get update --fix-missing && apt-get install -y \
     bzip2 \
