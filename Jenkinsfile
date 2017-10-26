@@ -18,7 +18,7 @@ node {
     /* Set the docker image name that for this build container.
        It's generally a good idea to use the same docker image per
        branch, so that containers are cached and thus the builds are faster. */
-    def ci_image_name = "simple_jenkins_test_${pythonVersion}_${env.BRANCH_NAME}"
+    def ci_image_name = "simple_jenkins_test_${pythonVersion}_${env.BUILD_NUMBER}"
 
     /* use the docker global variable to build an image named
        ci_image_name. We build with a dockerfile named Dockerfile.simple,
